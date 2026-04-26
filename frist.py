@@ -1,5 +1,3 @@
-#this is just a trial to test github 
-
 import json
 import os
 
@@ -20,6 +18,7 @@ def save_tasks(tasks):
 # Add task
 def add_task(tasks):
     task = input("Enter new task: ")
+    #print= ("do you wanna more?")
     tasks.append({"task": task, "done": False})
     save_tasks(tasks)
     print("Task added!")
